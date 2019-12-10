@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=arch-wireframe
+Description=An animated plymouth splash based on a render by reddit user /u/RedPanda_UA, made using jcklpe's Plymouth Animated Boot Screen Creator
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/arch-wireframe/animation
+ScriptFile=/usr/share/plymouth/themes/arch-wireframe/animated-boot.script
