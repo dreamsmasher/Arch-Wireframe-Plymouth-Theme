@@ -1,119 +1,61 @@
-# Animated Boot Screen Shell Script
+# Arch-Wireframe for Plymouth
 
-This is a template built off of Eonix's animated cat plymouth theme. I just wrote some scripts to make it easier to make your own. 
+This is a Plymouth theme built using jcklpe's Plymouth Animated Boot Screen Creator. I adapted an original render by /u/RedPanda_UA to make a
+high resolution splash screen (1920x1080). It runs at 15fps, but due to file restraints in Plymouth, the theme itself is much larger than 
+a static splash screen. It runs perfectly on my low-end laptop, so I hope that it works for you too. The frames located in /arch-wireframe/animation also
+make for dank wallpapers, although RedPanda_UA has uploaded 4k versions without mp4 artifacts.
 
+## Installation
 
-## Instructions 
+Since this is a theme for Arch, I'll only provide instructions for Arch users. If you're on another distro and want to pretend like you installed Arch,
+keep in mind that Plymouth has a dependency on some other distros called 
+.
+plymouth-themes
+.
+that is required to customize your splash screen. 
 
-1. Install Plymouth themes:
+### First things first:
 
-`sudo apt install plymouth-themes`
+Install Plymouth!
 
-2. Go to the plymouth themes folder
+.
+yay -S plymouth
+.
 
-`
+Read the wiki for more information on Plymouth configuration:
+https://wiki.archlinux.org/index.php/plymouth
+
+##Installing the theme:
+
+1. Go to your plymouth themes folder:
+
+.
 cd /usr/share/plymouth/themes
-`
+.
 
-3. Create new theme folder
+2. Clone this repo!
 
-`
-sudo mkdir ./{{ThemeNameHere}}
-`
+.
+git clone {fill in URL after getting permission}
+.
 
-4. Move into your new theme folder.
+3. Set arch-wireframe as your default theme:
 
-`
-cd {{ThemeNameHere}}
-`
+.
+sudo plymouth-set-default-theme -R arch-wireframe
+.
 
-3. Clone this repo contents into the folder.
+This will regenerate your initramfs in the process.
 
-`
-sudo git clone https://github.com/thedonquixotic/Plymouth-Animated-Boot-Screen-Creator.git .
-`
-The dot at the end will clone the contents of the template folder into your new theme folder. 
-
-### Customization
-
-1. Put mp4 or gif into the "input" folder. 
-2. Run the correct .sh file for the file type you are using. 
-3. Transfer the image sequence to the root of the project folder.
-4. Open up template.script and change the lines:
-```
-for (i = 0; i < {{NUMBER OF IMAGES IN SEQUENCE}}; i++)
-  flyingman_image[i] = Image("progress-" + i + ".png");
-flyingman_sprite = Sprite();
-```
-and 
-```
-flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 3) % {{NUMBER OF IMAGES}}]);
-```
-To have the correct number of images in the sequence. 
-
-5. Resave the template.script file as "animated-boot.script". 
-6. Open up template.plymouth and enter in your name, descriptions, and new script paths etc and save as {{ThemeNameHere}}.plymouth
-
-### Installation
-1. Install the theme using this script, be sure to replace the template variables used:
-
-```
- sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/{{ThemeName}}/{{ThemeName}}.plymouth 100
-```
-In my case it looks like this:
-```
-sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/slash/slash.plymouth 100
-```
-
-2. Select the default theme.
-`sudo update-alternatives --config default.plymouth`
-And select the number for your theme (I can't say this for sure but if the theme you want is under 0 for the auto mode, then I would select that as I think it boots in faster than manual)
-
-3. Update the initramfs image.
-
-`
-sudo update-initramfs -u
-`
-
-4. Now reboot.
-
-If you want to install this on < Ubuntu 16.04, change the path from /usr/share/plymouth to /lib/plymouth/ . You need to do this on the eionix-cat.plymouth file also.
-
-Also other possible perks:
-
-I found some scripts that are supposed to improve the transitions etc between Plymouth and the other parts of the start up process. I don't know if they worked for me or not. I had trouble getting the plymouth-gdm thing working as it seems that it's primarily something to do with pre-gdm3 versions and I'm on Ubuntu 18.04
-
-Anyway:
-
-- Edit the file /etc/initramfs-tools/conf.d/splash and add this line:
-
-`
-FRAMEBUFFER=y
-`
-
-- To enable smooth transition you have to disable your display manager unit, e.g.
-
-`
-systemctl disable gdm.service
-`
-
-- Enable the respective DM-plymouth Unit (GDM, LXDM, SLiM units provided), e.g.
-
-`
-systemctl enable gdm-plymouth.service
-`
+4. Reboot, sit back, and enjoy the \\V I B E S//
 
 
-
-
-### Credits
+#Credits
 Original repo by Eionix: https://github.com/krishnan793/PlymouthTheme-Cat/commits?author=krishnan793
+Theme creator made by jcklpe: https://github.com/jcklpe/Plymouth-Animated-Boot-Screen-Creator
+Art by RedPanda_UA: https://drive.google.com/drive/folders/1JPzp3ptSdtVcw5ztvMheGOxWaOjIVtZO
+		https://www.youtube.com/user/MasterKEnnY2009/featured
+Theme by dreamsmasher: https://github.com/dreamsmasher
 
-[![Video](https://4.bp.blogspot.com/-gG0MBGjEE9M/WBYXrOGrVGI/AAAAAAAABVE/auGpLRYf7jor4hu3jurYGcjaVBapHyAVACLcB/s320/8998adc40112985a8f29cf414925d390.gif)](https://www.youtube.com/watch?v=c6f478VBhtE)
-
-
-[Video] https://www.youtube.com/watch?v=c6f478VBhtE
-
-[Blog] http://eionix.blogspot.in/2016/10/plymouth-theme-for-ubuntu.html
-
-And if you want to check out my blog for more creative coding and unix customization stuff, check out https://www.jackalope.tech/blog
+Please let me know if you have any theme requests, I'm pretty adept in Photoshop and would love to contribute more to the Arch/FOSS community.
+Half of the theme packages on pling don't even work, so I'm gonna do my best to make and maintain aesthetic themes for your enjoyment.
