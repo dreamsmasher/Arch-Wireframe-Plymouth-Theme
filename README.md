@@ -10,9 +10,9 @@ make for dank wallpapers, although RedPanda_UA has uploaded 4k versions without 
 Since this is a theme for Arch, I assume that you're using it. If you're on another distro and want to pretend like you installed Arch,
 keep in mind that Plymouth has a dependency on some other distros called 
 
-'''
+```
 plymouth-themes
-'''
+```
 
 that is required to customize your splash screen. 
 
@@ -20,9 +20,9 @@ that is required to customize your splash screen.
 
 Install Plymouth from the AUR:
 
-'''
+```
 yay -S plymouth
-'''
+```
 
 Read the wiki for more information on Plymouth configuration:
 https://wiki.archlinux.org/index.php/plymouth
@@ -31,21 +31,21 @@ https://wiki.archlinux.org/index.php/plymouth
 
 1. Go to your plymouth themes folder:
 
-'''
+```
 cd /usr/share/plymouth/themes
-'''
+```
 
 2. Clone this repo!
 
-'''
+```
 git clone https://github.com/dreamsmasher/Arch-Wireframe-Plymouth-Theme
-'''
+```
 
 3. Set arch-wireframe as your default theme:
 
-'''
+```
 sudo plymouth-set-default-theme -R arch-wireframe
-'''
+```
 
 This will regenerate your initramfs in the process.
 
