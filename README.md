@@ -49,7 +49,7 @@ sudo plymouth-set-default-theme -R arch-wireframe
 
 This will regenerate your initramfs in the process.
 
-4. Reboot, sit back, and enjoy the \\V I B E S//
+4. Reboot, sit back, and enjoy the //V I B E S//
 
 
 # Credits
