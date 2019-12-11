@@ -7,50 +7,52 @@ make for dank wallpapers, although RedPanda_UA has uploaded 4k versions without 
 
 ## Installation
 
-Since this is a theme for Arch, I'll only provide instructions for Arch users. If you're on another distro and want to pretend like you installed Arch,
+Since this is a theme for Arch, I assume that you're using it. If you're on another distro and want to pretend like you installed Arch,
 keep in mind that Plymouth has a dependency on some other distros called 
-.
+
+'''
 plymouth-themes
-.
+'''
+
 that is required to customize your splash screen. 
 
 ### First things first:
 
-Install Plymouth!
+Install Plymouth from the AUR:
 
-.
+'''
 yay -S plymouth
-.
+'''
 
 Read the wiki for more information on Plymouth configuration:
 https://wiki.archlinux.org/index.php/plymouth
 
-##Installing the theme:
+## Installing the theme:
 
 1. Go to your plymouth themes folder:
 
-.
+'''
 cd /usr/share/plymouth/themes
-.
+'''
 
 2. Clone this repo!
 
-.
-git clone {fill in URL after getting permission}
-.
+'''
+git clone https://github.com/dreamsmasher/Arch-Wireframe-Plymouth-Theme
+'''
 
 3. Set arch-wireframe as your default theme:
 
-.
+'''
 sudo plymouth-set-default-theme -R arch-wireframe
-.
+'''
 
 This will regenerate your initramfs in the process.
 
 4. Reboot, sit back, and enjoy the \\V I B E S//
 
 
-#Credits
+# Credits
 Original repo by Eionix: https://github.com/krishnan793/PlymouthTheme-Cat/commits?author=krishnan793
 Theme creator made by jcklpe: https://github.com/jcklpe/Plymouth-Animated-Boot-Screen-Creator
 Art by RedPanda_UA: https://drive.google.com/drive/folders/1JPzp3ptSdtVcw5ztvMheGOxWaOjIVtZO
