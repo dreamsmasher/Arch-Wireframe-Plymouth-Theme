@@ -1,9 +1,8 @@
 # Arch-Wireframe for Plymouth
 
 This is a Plymouth theme built using jcklpe's Plymouth Animated Boot Screen Creator. I adapted an original render by /u/RedPanda_UA to make a
-high resolution splash screen (1920x1080). It runs at 15fps, but due to file restraints in Plymouth, the theme itself is much larger than 
-a static splash screen. It runs perfectly on my low-end laptop, so I hope that it works for you too. The frames located in /arch-wireframe/animation also
-make for dank wallpapers, although RedPanda_UA has uploaded 4k versions without mp4 artifacts.
+high resolution splash screen (1920x1080). It runs at 15fps due to file restraints in Plymouth, but the theme itself is much larger than 
+a static splash screen. The original animation was 2 seconds and ran at 60fps, so the theme would have been like 120MB if I didn't cut any frames. Either way, it runs perfectly on my low-end laptop, so I hope that it works for you too. The frames located in /arch-wireframe/animation also make for dank wallpapers, although /u/RedPanda_UA has uploaded 4k versions without mp4 artifacts.
 
 ## Installation
 
@@ -59,5 +58,5 @@ Art by RedPanda_UA: https://drive.google.com/drive/folders/1JPzp3ptSdtVcw5ztvMhe
 		https://www.youtube.com/user/MasterKEnnY2009/featured
 Theme by dreamsmasher: https://github.com/dreamsmasher
 
-Please let me know if you have any theme requests, I'm pretty adept in Photoshop and would love to contribute more to the Arch/FOSS community.
+Please let me know if you have any theme requests, I'm pretty adept in Photoshop/GIMP and would love to contribute more to the Arch/FOSS community.
 Half of the theme packages on pling don't even work, so I'm gonna do my best to make and maintain aesthetic themes for your enjoyment.
