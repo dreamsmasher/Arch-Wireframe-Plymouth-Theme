@@ -53,9 +53,12 @@ This will regenerate your initramfs in the process.
 
 # Credits
 Original repo by Eionix: https://github.com/krishnan793/PlymouthTheme-Cat/commits?author=krishnan793
+
 Theme creator made by jcklpe: https://github.com/jcklpe/Plymouth-Animated-Boot-Screen-Creator
+
 Art by RedPanda_UA: https://drive.google.com/drive/folders/1JPzp3ptSdtVcw5ztvMheGOxWaOjIVtZO
 		https://www.youtube.com/user/MasterKEnnY2009/featured
+
 Theme by dreamsmasher: https://github.com/dreamsmasher
 
 Please let me know if you have any theme requests, I'm pretty adept in Photoshop/GIMP and would love to contribute more to the Arch/FOSS community.
