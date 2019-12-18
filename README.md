@@ -37,7 +37,7 @@ cd /usr/share/plymouth/themes
 2. Clone this repo!
 
 ```
-git clone https://github.com/dreamsmasher/Arch-Wireframe-Plymouth-Theme
+git clone https://github.com/dreamsmasher/Arch-Wireframe-Plymouth-Theme arch-wireframe 
 ```
 
 3. Rename the repo folder to arch-wireframe (important to make it work with the script, now that I have multiple resolution versions)
