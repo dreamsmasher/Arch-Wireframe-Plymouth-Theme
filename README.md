@@ -43,7 +43,7 @@ git clone https://github.com/dreamsmasher/Arch-Wireframe-Plymouth-Theme
 3. Set arch-wireframe as your default theme:
 
 ```
-sudo plymouth-set-default-theme -R arch-wireframe
+sudo plymouth-set-default-theme -R Arch-Wireframe-Plymouth-theme
 ```
 
 This will regenerate your initramfs in the process.
