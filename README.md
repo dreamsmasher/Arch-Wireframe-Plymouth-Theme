@@ -40,10 +40,16 @@ cd /usr/share/plymouth/themes
 git clone https://github.com/dreamsmasher/Arch-Wireframe-Plymouth-Theme
 ```
 
-3. Set arch-wireframe as your default theme:
+3. Rename the repo folder to arch-wireframe (important to make it work with the script, now that I have multiple resolution versions)
 
 ```
-sudo plymouth-set-default-theme -R Arch-Wireframe-Plymouth-theme
+mv Arch-Wireframe-Plymouth-Theme arch-wireframe
+```
+
+4. Set arch-wireframe as your default theme:
+
+```
+sudo plymouth-set-default-theme -R arch-wireframe
 ```
 
 This will regenerate your initramfs in the process.
