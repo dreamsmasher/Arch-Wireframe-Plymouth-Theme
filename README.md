@@ -37,7 +37,7 @@ cd /usr/share/plymouth/themes
 2. Clone this repo!
 
 ```
-git clone https://github.com/dreamsmasher/Arch-Wireframe-Plymouth-Theme arch-wireframe 
+git clone https://github.com/dreamsmasher/Arch-Wireframe-Plymouth-Theme arch-wireframe
 ```
 
 3. Set arch-wireframe as your default theme:
@@ -60,6 +60,6 @@ Art by RedPanda_UA: https://drive.google.com/drive/folders/1JPzp3ptSdtVcw5ztvMhe
 		https://www.youtube.com/user/MasterKEnnY2009/featured
 
 Theme by dreamsmasher: https://github.com/dreamsmasher
-
+1366x768 version: https://github.com/dreamsmasher/arch-wireframe-plymouth-theme-1366 
 Please let me know if you have any theme requests, I'm pretty adept in Photoshop/GIMP and would love to contribute more to the Arch/FOSS community.
 Half of the theme packages on pling don't even work, so I'm gonna do my best to make and maintain aesthetic themes for your enjoyment.
