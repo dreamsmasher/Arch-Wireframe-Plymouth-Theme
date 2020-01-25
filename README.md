@@ -38,7 +38,7 @@ yay -S plymouth-theme-arch-wireframe
 ```
 sudo plymouth-set-default-theme -R arch-wireframe
 ```
-3. Reboot, and sit back in awe as your cool factory instantly skyrockets!
+3. Reboot, and sit back in awe as your cool factor instantly skyrockets!
 
 
 ## Manual Installation
