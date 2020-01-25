@@ -15,7 +15,7 @@ plymouth-themes
 
 that is required to customize your splash screen. 
 
-### Dependencies::
+### Dependencies:
 
 You need Plymouth, obviously.
 ```
@@ -25,9 +25,7 @@ yay -S plymouth
 Read the wiki for more information on Plymouth configuration:
 https://wiki.archlinux.org/index.php/plymouth
 
-## Installing the theme:
-
-# AUR Installation
+## AUR Installation
 
 1. Making AUR packages is actually difficult. Regardless, it's there now.
 
@@ -43,9 +41,9 @@ sudo plymouth-set-default-theme -R arch-wireframe
 3. Reboot, and sit back in awe as your cool factory instantly skyrockets!
 
 
-# Manual
+## Manual Installation
 
-1. Go to your plymouth themes folder:
+1. Go to your Plymouth themes folder:
 
 ```
 cd /usr/share/plymouth/themes
